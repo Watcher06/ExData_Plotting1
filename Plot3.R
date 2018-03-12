@@ -5,6 +5,7 @@ str(subsetfile1)
 global_active_power<-as.numeric(subsetfile1$Global_active_power)
 datetime<-strptime(paste(subsetfile1$Date,subsetfile1$Time,sep=""),"%d/%m/%Y %H:%M:%S")
 
+# convert all the submetering data into numeric value and save in separate variables
 submetering1<-as.numeric(subsetfile1$Sub_metering_1)
 submetering2<-as.numeric(subsetfile1$Sub_metering_2)
 submetering3<-as.numeric(subsetfile1$Sub_metering_3)
